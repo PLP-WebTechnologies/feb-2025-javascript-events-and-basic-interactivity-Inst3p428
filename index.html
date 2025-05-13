@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Playground</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Interactive Playground</h1>
+
+  <!-- Event Handling -->
+  <button id="action-btn" class="btn">Click Me!</button>
+  <p>Key Pressed: <span id="key-output">None</span></p>
+
+  <!-- Image Gallery -->
+  <div id="image-gallery">
+    <img src="RedR8.jpg" data-src="RedR8.jpg">
+    <img src="FrontA5.jpg" data-src="FrontA5.jpg">
+    <img src="blackA6.jpg" data-src="blackA6.jpg">
+  </div>
+  <img id="main-image" src="https://via.placeholder.com/300?text=Click+a+Thumbnail">
+
+  <!-- Tabs -->
+ <div>
+    <div class="tab" data-tab="one">Tab One</div>
+    <div class="tab" data-tab="two">Tab Two</div>
+  </div>
+  <div id="tab-one" class="tab-content active">
+    <h3>Audi R8</h3>
+    <p>The Audi R8 is a high-performance sports car known for its sleek design and powerful engine. It features:</p>
+    <ul>
+      <li>5.2L V10 engine</li>
+      <li>0-100 km/h in just 3.2 seconds</li>
+      <li>Quattro all-wheel drive system</li>
+      <li>Luxurious interior with advanced infotainment</li>
+    </ul>
+    <p>It's the perfect choice for those who want supercar performance with everyday usability.</p>
+  </div>
+  <div id="tab-two" class="tab-content">
+    <p>The Audi A5 combines elegance, comfort, and technology in a stylish coupe or sportback. Key features include:</p>
+    <ul>
+      <li>Turbocharged 2.0L TFSI engine</li>
+      <li>Available Quattro all-wheel drive</li>
+      <li>Virtual Cockpit and MMI Navigation Plus</li>
+      <li>Refined interior with premium materials</li>
+    </ul>
+    <p>The Audi A5 is ideal for those seeking a balance of performance, style, and everyday comfort.</p>
+  </div>
+
+  <!-- Form Validation -->
+  <h2>Form Validation</h2>
+  <form id="demo-form">
+    <label>Name: <input type="text" name="name" required></label><br>
+    <label>Email: <input type="email" name="email" required></label><br>
+    <label>Password: <input type="password" name="password" id="password" required minlength="8"></label>
+    <div id="password-feedback" class="feedback"></div>
+    <br>
+    <button type="submit">Submit</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>

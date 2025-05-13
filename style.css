@@ -1,0 +1,58 @@
+body { 
+    font-family: sans-serif; 
+    padding: 20px; 
+}
+.btn { 
+    padding: 10px 20px; 
+    background: royalblue; 
+    color: white; 
+    border: none; 
+    cursor: pointer; 
+    transition: 0.3s; 
+}
+.btn:hover { 
+    background: darkblue; 
+}
+.secret { 
+    background: crimson; 
+}
+#image-gallery img { 
+    max-width: 100px; 
+    margin: 5px; 
+    cursor: pointer; 
+    transition: 0.3s; 
+}
+#main-image { 
+    max-width: 300px; 
+    display: block; 
+    margin: 10px 0; 
+}
+.tab { 
+    display: inline-block; 
+    margin: 5px; 
+    padding: 5px 10px; 
+    background: lightgray; 
+    cursor: pointer; 
+}
+.tab.active { 
+    background: gray; 
+    color: white; 
+}
+.tab-content { 
+    display: none; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+}
+.tab-content.active { 
+    display: block; 
+}
+input:invalid { 
+    border-color: red; 
+}
+input:valid { 
+    border-color: green; 
+}
+.feedback { 
+    font-size: 12px; 
+    color: red; 
+}
